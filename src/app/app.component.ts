@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+//import { DogListComponent } from './dog-list.component';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'The Bulldog Shop';
+  title2 = 'The Dog Shop';
 }
+console.log('@@@@ app.component.ts @@@@@ ');

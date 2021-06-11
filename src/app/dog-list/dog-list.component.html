@@ -1,0 +1,17 @@
+<!--p>dog-list2222 works!</p-->
+<div style="text-align:center">
+    <h1>
+      {{ title }}
+      
+    </h1>
+</div>
+<div>
+    <div *ngFor="let dog of dogs"> 
+       <button id="allDogs" class="btn btn-secondary" (click)="loadDogs()">Like</button>
+       <button id="favorites" class="btn btn-primary" (click)="loadFavorites()">Favorites</button>
+        {{dog.name}}
+       <img width="100" src={{dog.image}}>
+    </div>
+</div>
+
+
