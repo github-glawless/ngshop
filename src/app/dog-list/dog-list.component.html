@@ -7,7 +7,7 @@
 </div>
 <div>
     <div *ngFor="let dog of dogs"> 
-       <button id="allDogs" class="btn btn-secondary" (click)="loadDogs()">Like</button>
+       <button id="heart" class="btn btn-secondary" (click)="loadDogs()">Likes</button>
        <button id="favorites" class="btn btn-primary" (click)="loadFavorites()">Favorites</button>
         {{dog.name}}
        <img width="100" src={{dog.image}}>

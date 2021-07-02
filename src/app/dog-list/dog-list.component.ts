@@ -2,6 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { AppComponent } from '../app.component';
 import { DogService} from '../dogs.service';
 import { FavoriteServiceService} from '../favorite-service.service';
+import { Dog } from '../dog';
+
+console.log(`@@@@DOG-LIST.COMPONENT@@@@`)
 
 @Component({
   selector: 'dog-list',
@@ -18,7 +21,7 @@ export class DogListComponent implements OnInit {
 
   constructor(private dogService: DogService,
               private favoriteService: FavoriteServiceService) {
-    this.dogService.all();
+    //this.dogService.all();
     //this.favoriteService.all();
     }
 
@@ -31,6 +34,10 @@ export class DogListComponent implements OnInit {
   }
   getFavorites() {
    // return this.favoriteService.all().subscribe(favorites => this.favorites = favorites);
+  }
+
+  loadDogs() {
+    this.dogService.all().subscribe(data => this.dogs = data);
   }
 
 
